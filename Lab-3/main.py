@@ -133,4 +133,7 @@ class TestSLList(unittest.TestCase):
 
 if __name__ == "__main__":
     # Tests are written using unittest rather than print statements
+
+    # Use the -v (verbose) flag to see specific test case results
+    # ie `python main.py -v`
     unittest.main()
