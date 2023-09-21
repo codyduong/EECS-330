@@ -3,8 +3,8 @@ Author: Cody Duong
 KUID: 3050266
 Date: 2023-09-14
 Lab: Lab4
-Last modified: 2023-09-14
-Purpose: Test ndarray deque functionality
+Last modified: 2023-09-21
+Purpose: Test reverse deque functionality
 
 E. Implementation of Deque Reversal
 """
@@ -19,5 +19,5 @@ class Test_Reverse_Deque(unittest.TestCase):
         self.assertEqual(reverse_deque(deque), ["baz", "bar", "foo"])
 
     def test_reverse_2(self) -> None:
-        deque: "DLList.Deque[str]" = DLList.Deque(*range(100))  # type: ignore
+        deque: "DLList.Deque[int]" = DLList.Deque(*range(100))  # type: ignore
         self.assertEqual(reverse_deque(deque), list(reversed(range(100))))

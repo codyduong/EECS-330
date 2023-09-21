@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "lab_4"}]
 
 [tool.poetry.dependencies]
-python = "^3.10.8"
+python = "3.10.8"
 numpy = "^1.25.2"
 
 

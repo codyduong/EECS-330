@@ -14,6 +14,8 @@ from tests.test_regular_deque import *
 from tests.test_numpy_deque import *
 from tests.test_is_palindrome import *
 from tests.test_reverse_deque import *
+from tests.test_word_to_deque import *
+from tests.test_off_by_n import *
 
 if __name__ == "__main__":
     unittest.main()

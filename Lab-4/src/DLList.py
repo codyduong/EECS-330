@@ -116,7 +116,7 @@ class DLList(Generic[T]):
             return isinstance(arg, DLList.Node)
 
     class Deque(Generic[T]):  # type: ignore
-        def __init__(self, *argv: Union[DLList[T], T, Iterable[T]]):
+        def __init__(self, *argv: Union[DLList[T], T, Iterable[T], str]):
             self._front: "DLList.Node[T]" | None = None
             self._back: "DLList.Node[T]" | None = None
             self._size = 0
@@ -288,6 +288,9 @@ class DLList(Generic[T]):
             curr_node: DLList.Node[T] | None = self._front
             try:
                 if is_int:
+                    if index > len(self):
+                        raise IndexError
+
                     # if index is less than half start from the front
                     if index <= len(self) // 2:
                         for _ in range(index):
@@ -413,6 +416,26 @@ class DLList(Generic[T]):
 
         def resize(self) -> None:
             raise NotImplementedError
+        
+        def __contains__(self, item: T) -> bool:
+            for v in self:
+                if v == item:
+                    return True 
+
+            return False
+        
+        def find(self, item: T) -> int:
+            """
+            Finds the item if possible
+
+            :param: Item to search for.
+            :return: -1 if not found, otherwise index found at.
+            """
+            for i in range(len(self)):
+                if self[i] == item: 
+                    return i
+                
+            return -1
 
     class DequeNP(Generic[T]):  # type: ignore
         def __init__(
