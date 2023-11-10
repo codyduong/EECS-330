@@ -1,4 +1,4 @@
-# Lab 6 | EECS 330
+# Lab 9 | EECS 330
 
 While [ `poetry` ](https://python-poetry.org/) is used for dependency management, it works functionally the same as [ `conda` ](https://docs.conda.io/en/latest/)
 
@@ -34,7 +34,4 @@ python -m unittest -v tests.tests
 ```sh
 black .
 ```
-
-## Other Notes
-* The BST code is borrowed from Lab6 which is also borrowed directly from my EECS268 Lab on BSTs, which already has preorder, inorder, and postorder implemented.
 
