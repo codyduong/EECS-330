@@ -1,4 +1,4 @@
-# Lab 9 | EECS 330
+# Lab 10 | EECS 330
 
 While [ `poetry` ](https://python-poetry.org/) is used for dependency management, it works functionally the same as [ `conda` ](https://docs.conda.io/en/latest/)
 
