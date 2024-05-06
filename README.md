@@ -6,7 +6,7 @@ All lab info/instructions are available at the [KU-EECS330 Fall23/lab-schedule](
 
 ## Grades
 
-> [!INFO]
+> [!NOTE]
 > Lab 1 was optional and non-graded
 
 | Lab    | Grade   |
