@@ -2,7 +2,11 @@
 
 Taken with [Dr. Zijun Yao](https://sites.google.com/view/zijunyao/) in Fall 2023.
 
-All lab info/instructions are available at the [KU-EECS330 Fall23/lab-schedule](https://github.com/ku-eecs330/lab-schedule) public repository
+All lab info/instructions are available at the ~~[KU-EECS330 Fall23/lab-schedule](https://github.com/ku-eecs330/lab-schedule)~~ public repository
+
+> [!WARNING]
+> It looks like the original `lab-schedule` repository was overwritten with Fall 2024. As such the original lab instructions have been lost. 
+> As long as labs remain mostly similiar, you may be able to extrapolate some usage from this repository.
 
 ## Grades
 
